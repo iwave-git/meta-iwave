@@ -1,8 +1,8 @@
 DISTRO_NAME = "NXP i.MX Release "
 DISTRO_VERSION = "L5.4.24_2.1.0"
 
-G27_BSP_VERSION = "\r Rootfs Version : iW-PRFHZ-SC-01-R4.0-REL1.0-YoctoZeus\n"
-G27_HOST = "iWave-G27M"
+G27_BSP_VERSION = "\r Rootfs Version : iW-PRGEE-SC-01-R2.0-REL0.1-YoctoZeus\n"
+G27_HOST = "iWave-G27S"
 
 do_install () {
 	for d in ${dirs555}; do
