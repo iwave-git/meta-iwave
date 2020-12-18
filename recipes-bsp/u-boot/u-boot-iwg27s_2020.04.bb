@@ -20,7 +20,7 @@ SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 	${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'file://PATCH001-iW-PRGEE-SC-01-R2.0-REL1.0-Linux5.4.24_Uboot_4GB_LPDDR4_Optee.patch', "", d)}"
 	
 
-SRCREV = "5cb9429c3c8dfe6a1e02201349f9507e3232249d"
+SRCREV = "67539a242c50a717be6df1124db3dc710d5afd9b"
 
 S = "${WORKDIR}/git"
 
