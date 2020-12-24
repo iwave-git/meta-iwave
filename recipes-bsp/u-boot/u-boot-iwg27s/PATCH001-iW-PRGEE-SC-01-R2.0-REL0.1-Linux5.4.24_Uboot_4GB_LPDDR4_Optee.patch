@@ -22,18 +22,9 @@ diff -Naur A/arch/arm/dts/fsl-imx8qm-iwg27s.dts B/arch/arm/dts/fsl-imx8qm-iwg27s
  &iomuxc {
  
 diff -Naur A/board/freescale/imx8qm_iwg27s/imx8qm_iwg27s.c B/board/freescale/imx8qm_iwg27s/imx8qm_iwg27s.c
---- A/board/freescale/imx8qm_iwg27s/imx8qm_iwg27s.c	2020-11-10 15:09:02.032165398 +0530
-+++ B/board/freescale/imx8qm_iwg27s/imx8qm_iwg27s.c	2020-11-10 15:07:42.365166008 +0530
-@@ -438,7 +438,7 @@
- {
- 	uint32_t reg[2];
- 	int ret=0;
--	
-+
- 	/*IWG27S: CMA: Assigning 640MB CMA value for 2GB memory size */
- #ifdef CONFIG_SDRAM_SIZE_2GB
- 	reg[0] = cpu_to_fdt32(0x0);
-@@ -448,6 +448,18 @@
+--- A/board/freescale/imx8qm_iwg27s/imx8qm_iwg27s.c	2020-12-24 13:38:19.442251981 +0530
++++ B/board/freescale/imx8qm_iwg27s/imx8qm_iwg27s.c	2020-12-24 13:34:44.579632194 +0530
+@@ -453,6 +453,18 @@
  		printf("Kernel FTD CMA update is failed");
  	}
  #endif

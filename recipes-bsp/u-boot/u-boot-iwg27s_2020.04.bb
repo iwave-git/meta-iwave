@@ -17,7 +17,7 @@ LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a
 UBOOT_SRC ?= "git://github.com/iwave-git/uboot-imx-iWave.git;protocol=https"
 SRCBRANCH = "iwave_v2020.04_5.4.24_2.1.0-iwg27s-r2.0-rel0.1"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
-	${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'file://PATCH001-iW-PRGEE-SC-01-R2.0-REL1.0-Linux5.4.24_Uboot_4GB_LPDDR4_Optee.patch', "", d)}"
+	${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'file://PATCH001-iW-PRGEE-SC-01-R2.0-REL0.1-Linux5.4.24_Uboot_4GB_LPDDR4_Optee.patch', "", d)}"
 	
 
 SRCREV = "67539a242c50a717be6df1124db3dc710d5afd9b"
