@@ -34,6 +34,8 @@ DO_CONFIG_V7_COPY_mx8 = "no"
 addtask copy_defconfig after do_patch before do_preconfigure
 
 do_copy_defconfig () {
+    cd ${S}
+    git config core.abbrev 12
     install -d ${B}
     if [ ${DO_CONFIG_V7_COPY} = "yes" ]; then
         # copy latest imx_v7_defconfig to use for mx6, mx6ul and mx7
