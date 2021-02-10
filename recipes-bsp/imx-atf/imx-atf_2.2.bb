@@ -11,7 +11,7 @@ SRCBRANCH = "iwave_5.4.24_2.1.0-iwg27m-q7-r1.0-rel0.1"
 ATF_SRC ?= "git://github.com/iwave-git/imx-atf-iWave.git;protocol=https"
 SRC_URI = "${ATF_SRC};branch=${SRCBRANCH} \
 "
-SRCREV = "971ab10aea915e3067aed02ae0194ee9836b2c65"
+SRCREV = "0781ed322786c2f98eac4fb2e576157d9e3fdf62"
 
 S = "${WORKDIR}/git"
 
@@ -34,6 +34,7 @@ PLATFORM_mx8x   = "imx8qx"
 EXTRA_OEMAKE += " \
     CROSS_COMPILE="${TARGET_PREFIX}" \
     PLAT=${PLATFORM} \
+    MACHINE=${@d.getVar('MACHINE').replace('-','_')} \
 "
 
 BUILD_OPTEE = "${@bb.utils.contains('MACHINE_FEATURES', 'optee', 'true', 'false', d)}"

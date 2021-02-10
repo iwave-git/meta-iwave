@@ -159,7 +159,7 @@ do_compile() {
            make SOC=${SOC_TARGET} ${REV_OPTION} V2X=NO  flash_linux_m4
         else
            bbnote "building ${SOC_TARGET} - ${REV_OPTION} ${target}"
-           make SOC=${SOC_TARGET} ${REV_OPTION} ${target}
+           make SOC=${SOC_TARGET} TEE_LOAD_ADDR=${TEE_LOAD_ADDR} ${REV_OPTION} ${target}
         fi
         if [ -e "${BOOT_STAGING}/flash.bin" ]; then
             cp ${BOOT_STAGING}/flash.bin ${S}/${BOOT_CONFIG_MACHINE}-${target}
