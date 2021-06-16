@@ -11,13 +11,13 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "iwave_5.4.70_2.3.0-iwg40m-r1.0-rel0.1"
+SRCBRANCH = "iwave_5.4.70_2.3.0-iwg40m-r1.0-rel0.2"
 LOCALVERSION = "-2.3.0"
 KERNEL_SRC ?= "git://github.com/iwave-git/linux-imx-iWave.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} \
 	"
 
-SRCREV = "7a00da212d149db78dc8065d8cddc1be3ad9eeed"
+SRCREV = "d32a17c70fd745f8eef52bb7af1f2e47b96ad6cb"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo "
 

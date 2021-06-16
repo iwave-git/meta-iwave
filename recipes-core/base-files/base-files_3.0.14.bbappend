@@ -1,7 +1,7 @@
 DISTRO_NAME = "NXP i.MX Release "
 DISTRO_VERSION = "L5.4.70_2.3.0"
 
-G40_BSP_VERSION = "\r Rootfs Version : iW-PRGQZ-SC-01-R1.0-REL0.1-YoctoZeus\n"
+G40_BSP_VERSION = "\r Rootfs Version : iW-PRGQZ-SC-01-R1.0-REL0.2-YoctoZeus\n"
 G40_HOST = "iWave-G40M"
 
 do_install () {
