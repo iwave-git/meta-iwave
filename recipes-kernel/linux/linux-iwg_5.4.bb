@@ -17,7 +17,7 @@ KERNEL_SRC ?= "git://github.com/iwave-git/linux-imx-iWave.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} \
 	"
 
-SRCREV = "57ad58748d21a0ecd52b49df2cc94e8d6ebaf19d"
+SRCREV = "f1fad91d3ba4a96878a567446bb52dbbb95a2455"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo "
 
