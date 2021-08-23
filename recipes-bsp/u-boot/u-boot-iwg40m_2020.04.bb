@@ -17,7 +17,7 @@ UBOOT_SRC ?= "git://github.com/iwave-git/uboot-imx-iWave.git;protocol=https"
 SRCBRANCH = "iwave_v2020.04_5.4.70_2.3.0-iwg40m-r2.0-rel0.1"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 "
-SRCREV = "00fc5123aa8f31368b5ba62d872da8df91ededc2"
+SRCREV = "1caf0ed4e25d840aaeeb840a0d197d508dded25c"
 
 S = "${WORKDIR}/git"
 
