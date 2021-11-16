@@ -14,10 +14,10 @@ LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 UBOOT_SRC ?= "git://github.com/iwave-git/uboot-imx-iWave.git;protocol=https"
-SRCBRANCH = "iwave_v2020.04_5.4.70_2.3.0-iwg40m-r2.0-rel0.1"
+SRCBRANCH = "iwave_v2020.04_5.4.70_2.3.0-iwg40m-r2.0-rel0.2"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 "
-SRCREV = "1caf0ed4e25d840aaeeb840a0d197d508dded25c"
+SRCREV = "83db3db734f42c4a93fd816b5d25dbf3cf76496b"
 
 S = "${WORKDIR}/git"
 
