@@ -17,7 +17,9 @@ KERNEL_SRC ?= "git://github.com/iwave-git/linux-imx-iWave.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} \
 	"
 
-SRCREV = "55b4e8a94fd0fecfa8bd580c8648a14245fc2b25"
+#SRCREV = "55b4e8a94fd0fecfa8bd580c8648a14245fc2b25"  /* PCIe external clock configuration */
+#Below change of SRCREV for PCIe internal clock configuartion.
+SRCREV = "4b205c2834241489ba1a555553bd825b401a71de"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo "
 
