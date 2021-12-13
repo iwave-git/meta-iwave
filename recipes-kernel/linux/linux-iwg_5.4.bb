@@ -19,7 +19,9 @@ SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} \
 
 #SRCREV = "55b4e8a94fd0fecfa8bd580c8648a14245fc2b25"  /* PCIe external clock configuration */
 #Below change of SRCREV for PCIe internal clock configuartion.
-SRCREV = "4ca51a89f5868c9ce5b255699bd4bf3d975d0eef"
+#SRCREV = "4ca51a89f5868c9ce5b255699bd4bf3d975d0eef"
+#Below change of SRCREV for 8GB configuration
+SRCREV = "f5cf12bd018a10c38c1755a32da6f99e7ea26891"
 
 FILES_${KERNEL_PACKAGE_NAME}-base += "${nonarch_base_libdir}/modules/${KERNEL_VERSION}/modules.builtin.modinfo "
 
