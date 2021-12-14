@@ -48,7 +48,7 @@ do_copy_defconfig () {
     else
         # copy latest iw_rainbowgxxx_defconfig to use for mx8
         mkdir -p ${B}
-	if [ "${@bb.utils.contains_any('MACHINE', 'imx8mm-iwg34s imx8mm-iwg34s-2gb', 'yes', 'no', d)}" = "yes" ]; then
+	if [ "${@bb.utils.contains_any('MACHINE', 'imx8mm-iwg34s imx8mm-iwg34s-2gb imx8mm-iwg34s-8gb', 'yes', 'no', d)}" = "yes" ]; then
 		cp ${S}/arch/arm64/configs/iw_rainbowg34s_defconfig ${B}/.config
 		cp ${S}/arch/arm64/configs/iw_rainbowg34s_defconfig ${B}/../defconfig
 	fi

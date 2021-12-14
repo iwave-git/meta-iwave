@@ -4,7 +4,7 @@ DESCRIPTION = "iwtest files"
 PROVIDES += "${PN}"
 LICENSE = "GPLv2+"
 
-COMPATIBLE_MACHINE = "(imx8mm-iwg34s|imx8mm-iwg34s-2gb|imx8mn-iwg37s)"
+COMPATIBLE_MACHINE = "(imx8mm-iwg34s|imx8mm-iwg34s-2gb|imx8mm-iwg34s-8gb|imx8mn-iwg37s)"
 
 INHIBIT_PACKAGE_DEBUG_SPLIT = "1"
 INHIBIT_PACKAGE_STRIP = "1"

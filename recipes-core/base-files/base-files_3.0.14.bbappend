@@ -3,7 +3,7 @@ DISTRO_VERSION = "L5.4.70_2.3.0"
 
 IWG_BSP_VERSION = "\r Rootfs Version : iW-PRGII-SC-01-R1.0-REL0.3-YoctoZeus\n"
 
-IWG_HOST = "${@bb.utils.contains_any('MACHINE', 'imx8mm-iwg34s imx8mm-iwg34s-2gb', 'iWave-G34S', bb.utils.contains_any('MACHINE', 'imx8mn-iwg37s', 'iWave-G37S', '', d), d)}"
+IWG_HOST = "${@bb.utils.contains_any('MACHINE', 'imx8mm-iwg34s imx8mm-iwg34s-2gb imx8mm-iwg34s-8gb', 'iWave-G34S', bb.utils.contains_any('MACHINE', 'imx8mn-iwg37s', 'iWave-G37S', '', d), d)}"
 
 do_install () {
 	for d in ${dirs555}; do
