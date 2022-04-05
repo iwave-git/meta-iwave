@@ -2,7 +2,8 @@ DISTRO_NAME = "NXP i.MX Release "
 DISTRO_VERSION = "L5.4.70_2.3.0"
 
 G40_BSP_VERSION = "\r Rootfs Version : iW-PRGLZ-SC-01-R1.0-REL0.1-YoctoZeus\n"
-G40_HOST = "iWave-G40M-OSM"
+G40_HOST = "iWave-G40M"
+G40_MODEL = "OSM"
 
 do_install () {
 	for d in ${dirs555}; do
@@ -68,7 +69,7 @@ do_install_basefilesissue () {
 			printf "%s " $distro_version_nodate >> ${D}${sysconfdir}/issue
 			printf "%s " $distro_version_nodate >> ${D}${sysconfdir}/issue.net
 		fi
-		printf "\\\n \\\l\n" >> ${D}${sysconfdir}/issue
+		printf "\\\n ${G40_MODEL} \\\l\n" >> ${D}${sysconfdir}/issue
 		echo >> ${D}${sysconfdir}/issue
 		echo "%h"    >> ${D}${sysconfdir}/issue.net
 		echo >> ${D}${sysconfdir}/issue.net
