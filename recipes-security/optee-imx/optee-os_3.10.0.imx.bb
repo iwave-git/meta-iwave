@@ -7,8 +7,7 @@ SRCBRANCH = "iwg40m_osm_5.4.70_2.3.0_0.1"
 SRCREV = "68491936d8b4f210d46c5ccf5ba3b7a40c096d1d"
 OPTEE_OS_SRC = "git://github.com/iwave-git/imx-optee-os-iWave.git;protocol=https"
 
-PLATFORM_FLAVOR_mx8mp = "${@bb.utils.contains('MACHINE', 'imx8mp-iwg40m-osm', 'mx8mp_iwg40m', 'mx8mp_iwg40m_osm_2gb', d)}"
-#PLATFORM_FLAVOR_mx8mp = "${@bb.utils.contains('MACHINE', 'imx8mp-iwg40m-osm', 'mx8mp_iwg40m_osm', 'mx8mp_iwg40m_2gb', d)}"
+PLATFORM_FLAVOR_mx8mp = "${@bb.utils.contains('MACHINE', 'imx8mp-iwg40m-osm', 'mx8mp_iwg40m', 'mx8mp_iwg40m_2gb', d)}"
 
 COMPATIBLE_MACHINE = "(imx8mp-iwg40m-osm|imx8mp-iwg40m-osm-2gb)"
 # tee-init_load_addr.txt has been remove in lates optee-os version.

@@ -17,7 +17,7 @@ UBOOT_SRC ?= "git://github.com/iwave-git/uboot-imx-iWave.git;protocol=https"
 SRCBRANCH = "iwg40m_osm_L5.4.70_2.3.0_0.1"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH} \
 "
-SRCREV = "8681aa2edcf5fc434e676fa80733fc16d944bf05"
+SRCREV = "69c54b1005f96aaa8c925bb912df3c26e843a979"
 
 S = "${WORKDIR}/git"
 

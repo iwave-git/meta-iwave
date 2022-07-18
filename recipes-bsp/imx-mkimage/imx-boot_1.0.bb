@@ -111,6 +111,8 @@ compile_mx8m() {
                                                              ${BOOT_STAGING}/u-boot-spl.bin
     if [ "${MACHINE}" = "imx8mmevk-qcawifi" ]; then
         cp ${DEPLOY_DIR_IMAGE}/${BOOT_TOOLS}/${UBOOT_DTB_NAME}   ${BOOT_STAGING}/imx8mm-evk.dtb
+    elif [ "${MACHINE}" = "imx8mp-iwg40m-osm" ] || [ "${MACHINE}" = "imx8mp-iwg40m-osm-2gb" ]; then
+        cp ${DEPLOY_DIR_IMAGE}/${BOOT_TOOLS}/${UBOOT_DTB_NAME}   ${BOOT_STAGING}/imx8mp-iwg40m.dtb
     else
         cp ${DEPLOY_DIR_IMAGE}/${BOOT_TOOLS}/${UBOOT_DTB_NAME}   ${BOOT_STAGING}
     fi
