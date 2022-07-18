@@ -11,7 +11,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "iwg40m_osm_5.4.70_2.3.0_0.1"
+SRCBRANCH = "iwg40m_osm_L5.4.70_2.3.0_0.1"
 LOCALVERSION = "-2.3.0"
 KERNEL_SRC ?= "git://github.com/iwave-git/linux-imx-iWave.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH} \
