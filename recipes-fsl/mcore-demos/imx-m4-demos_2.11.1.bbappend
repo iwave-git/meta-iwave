@@ -3,7 +3,7 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 SRC_URI += "${M4-BINARIES}"
-SRC_URI[sha256sum] = "a0fb1988fdcd9c4815885aabbd3caceff2a2919437202fb462791c91b2e1fe02"
+SRC_URI[sha256sum] = "50038a2bb8389c1cce2abd97107480ed146826c6cae1402ebeadd49793ca62b9"
 #SRC_URI[sha256sum] = "c14f6d2f41d2a16eb9f948c6182ef3fbb9dfccdd5399b78e2fe3fa8ae9006dde"
 
 do_install () {

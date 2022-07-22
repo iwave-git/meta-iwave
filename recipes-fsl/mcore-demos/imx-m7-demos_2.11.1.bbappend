@@ -3,7 +3,7 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 SRC_URI += "${M7-BINARIES}"
-SRC_URI[sha256sum] = "aa4a57ed2ddbf6e27a14269be38f5ab3803889d71e8dcca76f8586a77802b010"
+SRC_URI[sha256sum] = "0e0de9e1398a60e06f4ecd016d284d582201df078bfae425a1fbb3897f7660e6"
 
 do_install () {
     install -d ${D}${base_libdir}/firmware

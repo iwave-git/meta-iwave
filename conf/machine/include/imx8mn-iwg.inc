@@ -2,13 +2,14 @@ MACHINEOVERRIDES =. "imx-boot-container:mx8:mx8m:mx8mn:"
 
 require imx8m-iwg-common.inc
 
-MACHINE_FEATURES += "wifi bluetooth bcm43455 bcm4356"
+MACHINE_FEATURES += "wifi bluetooth bcm43455 bcm4356 optee"
 
 IMAGE_INSTALL:append = " gstreamer1.0-libav ffmpeg x264 "
-CORE_IMAGE_EXTRA_INSTALL += "gstreamer1.0-plugins-ugly-meta \
-			packagegroup-fsl-gstreamer1.0-commercial"
-	CORE_IMAGE_EXTRA_INSTALL += "gstreamer1.0-plugins-ugly"
-LICENSE_FLAGS_WHITELIST = "commercial"
+IMAGE_INSTALL:append = " gstreamer1.0-libav ffmpeg x264 "
+CORE_IMAGE_EXTRA:INSTALL += "gstreamer1.0-plugins-ugly-meta \
+                        packagegroup-fsl-gstreamer1.0-commercial"
+CORE_IMAGE_EXTRA:INSTALL += "gstreamer1.0-plugins-ugly"
+LICENSE_FLAGS_ACCEPTED = "commercial"
 
 TEE_LOAD_ADDR = "0x56000000"
 
