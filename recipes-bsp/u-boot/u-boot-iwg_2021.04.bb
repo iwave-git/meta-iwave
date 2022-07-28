@@ -2,7 +2,7 @@
 
 require ../meta-bsp/recipes-bsp/u-boot/u-boot-imx_2021.04.bb
 
-UBOOT_SRC = "git://git-codecommit.ap-south-1.amazonaws.com/v1/repos/uboot-imx-iWave;protocol=https"
+UBOOT_SRC = "git://github.com/iwave-git/uboot-imx-iWave.git;protocol=https"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH-UBOOT} \
 "
 SRCREV = "${SRCREV-UBOOT}"

@@ -2,7 +2,7 @@
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-IMX_MKIMAGE_SRC = "git://git-codecommit.ap-south-1.amazonaws.com/v1/repos/imx-mkimage-iWave;protocol=https"
+IMX_MKIMAGE_SRC = "git://github.com/iwave-git/imx-mkimage-iWave.git;protocol=https"
 SRC_URI = "${IMX_MKIMAGE_SRC};branch=${SRCBRANCH-MKIMAGE} \
 file://PATCH000-PRFYZ-iMX8M-soc.mak-use-native-mkimage-from-sysroot.patch \
 "

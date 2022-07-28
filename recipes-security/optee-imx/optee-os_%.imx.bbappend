@@ -1,6 +1,6 @@
 #Copyright (C) 2022-23 iWave Systems Technologies Pvt Ltd
 
-OPTEE_OS_SRC = "git://git-codecommit.ap-south-1.amazonaws.com/v1/repos/imx-optee-os-iWave;protocol=https"
+OPTEE_OS_SRC = "git://github.com/iwave-git/imx-optee-os-iWave.git;protocol=https"
 SRC_URI = "${OPTEE_OS_SRC};branch=${SRCBRANCH-OPTEE} \
 "
 SRCREV = "${SRCREV-OPTEE}"

@@ -1,6 +1,6 @@
 # Copyright (C) 2022-23 iWave System Technologies Pvt Ltd. 
 
-ATF_SRC = "git://git-codecommit.ap-south-1.amazonaws.com/v1/repos/imx-atf-iWave;protocol=https"
+ATF_SRC = "git://github.com/iwave-git/imx-atf-iWave.git;protocol=https"
 SRC_URI = "${ATF_SRC};branch=${SRCBRANCH-ATF} \
 "
 SRCREV = "${SRCREV-ATF}"	

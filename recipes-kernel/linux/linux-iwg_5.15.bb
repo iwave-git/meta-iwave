@@ -2,7 +2,7 @@
 
 require ../meta-bsp/recipes-kernel/linux/linux-imx_5.15.bb
 
-KERNEL_SRC = "git://git-codecommit.ap-south-1.amazonaws.com/v1/repos/linux-imx-iWave;protocol=https"
+KERNEL_SRC = "git://github.com/iwave-git/linux-imx-iWave.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH-KERNEL} \
 "
 
